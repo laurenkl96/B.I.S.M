@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeControl));
             this.ux_HomeControlTopPanel = new System.Windows.Forms.Panel();
-            this.ux_HomeTitleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ux_HomeTitleLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ux_HomeControlDatabase = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.ux_Username = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,16 +55,6 @@
             this.ux_HomeControlTopPanel.Size = new System.Drawing.Size(751, 75);
             this.ux_HomeControlTopPanel.TabIndex = 0;
             // 
-            // ux_HomeTitleLabel
-            // 
-            this.ux_HomeTitleLabel.AutoSize = true;
-            this.ux_HomeTitleLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ux_HomeTitleLabel.Location = new System.Drawing.Point(31, 18);
-            this.ux_HomeTitleLabel.Name = "ux_HomeTitleLabel";
-            this.ux_HomeTitleLabel.Size = new System.Drawing.Size(358, 25);
-            this.ux_HomeTitleLabel.TabIndex = 0;
-            this.ux_HomeTitleLabel.Text = "Business Inventory System Manager 2017";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -74,6 +64,16 @@
             this.label1.Size = new System.Drawing.Size(224, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Created By: Cole, Lauren, Jordan, and Cale";
+            // 
+            // ux_HomeTitleLabel
+            // 
+            this.ux_HomeTitleLabel.AutoSize = true;
+            this.ux_HomeTitleLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ux_HomeTitleLabel.Location = new System.Drawing.Point(31, 18);
+            this.ux_HomeTitleLabel.Name = "ux_HomeTitleLabel";
+            this.ux_HomeTitleLabel.Size = new System.Drawing.Size(357, 25);
+            this.ux_HomeTitleLabel.TabIndex = 0;
+            this.ux_HomeTitleLabel.Text = "Business Inventory System Manager 2017";
             // 
             // label2
             // 
@@ -111,14 +111,14 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Current User: ";
             // 
-            // label5
+            // ux_Username
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(308, 143);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Username";
+            this.ux_Username.AutoSize = true;
+            this.ux_Username.Location = new System.Drawing.Point(308, 143);
+            this.ux_Username.Name = "ux_Username";
+            this.ux_Username.Size = new System.Drawing.Size(55, 13);
+            this.ux_Username.TabIndex = 5;
+            this.ux_Username.Text = "Username";
             // 
             // label6
             // 
@@ -164,7 +164,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ux_Username);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ux_HomeControlDatabase);
             this.Controls.Add(this.label3);
@@ -188,7 +188,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label ux_HomeControlDatabase;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label ux_Username;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;

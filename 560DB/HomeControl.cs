@@ -16,5 +16,11 @@ namespace _560DB
         {
             InitializeComponent();
         }
+
+        public void Update(String db, String user)
+        {
+            ux_HomeControlDatabase.Text = db;
+            ux_Username.Text = user;
+        }
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace _560DB
 {
@@ -20,6 +22,18 @@ namespace _560DB
             homeControl1.Enabled = true;
             homeControl1.Visible = true;
             homeControl1.BringToFront();
+            string connstr = "server=mysql.cis.ksu.edu;user=jordanmartin;database=jordanmartin;port=3306;password=insecurepassword";
+            MySqlConnection conn = new MySqlConnection(connstr);
+            try
+            {
+                conn.Open();
+                homeControl1.Update("calbenne", "calbenne");
+            }
+            catch (Exception e)
+            {
+                homeControl1.Update("Error connecting to Database", "No user");
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
