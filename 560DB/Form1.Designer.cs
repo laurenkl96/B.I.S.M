@@ -43,11 +43,16 @@
             this.ux_Home = new System.Windows.Forms.Button();
             this.ux_TopPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.ux_Employees = new System.Windows.Forms.Button();
+            this.employeeControl1 = new _560DB.EmployeeControl();
+            this.orderPartsControl1 = new _560DB.OrderPartsControl();
+            this.salesPortalControl1 = new _560DB.SalesPortalControl();
             this.partEntryControl1 = new _560DB.PartEntryControl();
             this.jobEntryControl1 = new _560DB.JobEntryControl();
             this.partSearchControl1 = new _560DB.PartSearchControl();
             this.jobSearchControl1 = new _560DB.JobSearchControl();
             this.homeControl1 = new _560DB.HomeControl();
+            this.analyzeControl1 = new _560DB.AnalyzeControl();
             this.ux_TabPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ux_TopPanel.SuspendLayout();
@@ -56,6 +61,7 @@
             // ux_TabPanel
             // 
             this.ux_TabPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ux_TabPanel.Controls.Add(this.ux_Employees);
             this.ux_TabPanel.Controls.Add(this.ux_ActiveBar);
             this.ux_TabPanel.Controls.Add(this.ux_TitleLabel);
             this.ux_TabPanel.Controls.Add(this.pictureBox1);
@@ -259,6 +265,44 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ux_Employees
+            // 
+            this.ux_Employees.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ux_Employees.FlatAppearance.BorderSize = 0;
+            this.ux_Employees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.ux_Employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ux_Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ux_Employees.ForeColor = System.Drawing.Color.White;
+            this.ux_Employees.Location = new System.Drawing.Point(0, 484);
+            this.ux_Employees.Name = "ux_Employees";
+            this.ux_Employees.Size = new System.Drawing.Size(150, 47);
+            this.ux_Employees.TabIndex = 5;
+            this.ux_Employees.Text = "Employees";
+            this.ux_Employees.UseVisualStyleBackColor = true;
+            this.ux_Employees.Click += new System.EventHandler(this.ux_Employees_Click);
+            // 
+            // employeeControl1
+            // 
+            this.employeeControl1.Location = new System.Drawing.Point(150, 32);
+            this.employeeControl1.Name = "employeeControl1";
+            this.employeeControl1.Size = new System.Drawing.Size(751, 535);
+            this.employeeControl1.TabIndex = 9;
+            // 
+            // orderPartsControl1
+            // 
+            this.orderPartsControl1.Location = new System.Drawing.Point(150, 32);
+            this.orderPartsControl1.Name = "orderPartsControl1";
+            this.orderPartsControl1.Size = new System.Drawing.Size(751, 535);
+            this.orderPartsControl1.TabIndex = 8;
+            // 
+            // salesPortalControl1
+            // 
+            this.salesPortalControl1.Location = new System.Drawing.Point(150, 32);
+            this.salesPortalControl1.Name = "salesPortalControl1";
+            this.salesPortalControl1.Size = new System.Drawing.Size(751, 535);
+            this.salesPortalControl1.TabIndex = 7;
+            // 
             // partEntryControl1
             // 
             this.partEntryControl1.Location = new System.Drawing.Point(150, 32);
@@ -294,11 +338,22 @@
             this.homeControl1.Size = new System.Drawing.Size(751, 535);
             this.homeControl1.TabIndex = 2;
             // 
+            // analyzeControl1
+            // 
+            this.analyzeControl1.Location = new System.Drawing.Point(150, 32);
+            this.analyzeControl1.Name = "analyzeControl1";
+            this.analyzeControl1.Size = new System.Drawing.Size(751, 535);
+            this.analyzeControl1.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 567);
+            this.Controls.Add(this.analyzeControl1);
+            this.Controls.Add(this.employeeControl1);
+            this.Controls.Add(this.orderPartsControl1);
+            this.Controls.Add(this.salesPortalControl1);
             this.Controls.Add(this.partEntryControl1);
             this.Controls.Add(this.jobEntryControl1);
             this.Controls.Add(this.partSearchControl1);
@@ -338,6 +393,11 @@
         private PartSearchControl partSearchControl1;
         private JobEntryControl jobEntryControl1;
         private PartEntryControl partEntryControl1;
+        private SalesPortalControl salesPortalControl1;
+        private OrderPartsControl orderPartsControl1;
+        private System.Windows.Forms.Button ux_Employees;
+        private EmployeeControl employeeControl1;
+        private AnalyzeControl analyzeControl1;
     }
 }
 

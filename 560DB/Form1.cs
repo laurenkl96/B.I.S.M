@@ -91,18 +91,27 @@ namespace _560DB
         {
             ux_ActiveBar.Location = ux_SalesPortal.Location;
             hide_controls();
+            salesPortalControl1.Enabled = true;
+            salesPortalControl1.Visible = true;
+            salesPortalControl1.BringToFront();
         }
 
         private void ux_OrderParts_Click(object sender, EventArgs e)
         {
             ux_ActiveBar.Location = ux_OrderParts.Location;
             hide_controls();
+            orderPartsControl1.Enabled = true;
+            orderPartsControl1.Visible = true;
+            orderPartsControl1.BringToFront();
         }
 
         private void ux_Analyze_Click(object sender, EventArgs e)
         {
             ux_ActiveBar.Location = ux_Analyze.Location;
             hide_controls();
+            analyzeControl1.Enabled = true;
+            analyzeControl1.Visible = true;
+            analyzeControl1.BringToFront();
         }
 
         private void hide_controls()
@@ -117,6 +126,22 @@ namespace _560DB
             jobEntryControl1.Visible = false;
             partEntryControl1.Enabled = false;
             partEntryControl1.Visible = false;
+            salesPortalControl1.Enabled = false;
+            salesPortalControl1.Visible = false;
+            orderPartsControl1.Enabled = false;
+            orderPartsControl1.Visible = false;
+            employeeControl1.Enabled = false;
+            employeeControl1.Visible = false;
+            analyzeControl1.Enabled = false;
+            analyzeControl1.Visible = false;
+        }
+
+        private void ux_Employees_Click(object sender, EventArgs e)
+        {
+            ux_ActiveBar.Location = ux_Employees.Location;
+            hide_controls();
+            employeeControl1.Enabled = true;
+            employeeControl1.Visible = true;
         }
     }
 }
