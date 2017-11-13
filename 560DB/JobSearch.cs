@@ -12,6 +12,7 @@ namespace _560DB
 {
     public partial class JobSearchControl : UserControl
     {
+        public int searchparam = 0;
         public JobSearchControl()
         {
             InitializeComponent();
@@ -39,6 +40,7 @@ namespace _560DB
             ux_SearchLabel.Visible = true;
             ux_SearchText.Visible = true;
             ux_SearchLabel.Text = "Job ID:";
+            searchparam = 0;
         }
 
         private void ux_ProcessSearch_Click(object sender, EventArgs e)
@@ -53,6 +55,7 @@ namespace _560DB
             ux_SearchLabel.Visible = true;
             ux_SearchText.Visible = true;
             ux_SearchLabel.Text = "Process Name: ";
+            searchparam = 1;
         }
 
         private void ux_DateSearch_Click(object sender, EventArgs e)
@@ -66,6 +69,7 @@ namespace _560DB
             ux_EndLabel.Visible = true;
             ux_StartDate.Visible = true;
             ux_StartLabel.Visible = true;
+            searchparam = 2;
         }
     }
 }

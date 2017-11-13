@@ -27,7 +27,7 @@ namespace _560DB
             try
             {
                 conn.Open();
-                homeControl1.Update("calbenne", "calbenne");
+                homeControl1.Update("jordanmartin", "jordanmartin");
             }
             catch (Exception e)
             {
@@ -64,18 +64,27 @@ namespace _560DB
         {
             ux_ActiveBar.Location = ux_PartSearch.Location;
             hide_controls();
+            partSearchControl1.Enabled = true;
+            partSearchControl1.Visible = true;
+            partSearchControl1.BringToFront();
         }
 
         private void uxJobEntry_Click(object sender, EventArgs e)
         {
             ux_ActiveBar.Location = uxJobEntry.Location;
             hide_controls();
+            jobEntryControl1.Enabled = true;
+            jobEntryControl1.Visible = true;
+            jobEntryControl1.BringToFront();
         }
 
         private void ux_PartEntry_Click(object sender, EventArgs e)
         {
             ux_ActiveBar.Location = ux_PartEntry.Location;
             hide_controls();
+            partEntryControl1.Enabled = true;
+            partEntryControl1.Visible = true;
+            partEntryControl1.BringToFront();
         }
 
         private void ux_SalesPortal_Click(object sender, EventArgs e)
@@ -102,6 +111,12 @@ namespace _560DB
             homeControl1.Visible = false;
             jobSearchControl1.Enabled = false;
             jobSearchControl1.Visible = false;
+            partSearchControl1.Enabled = false;
+            partSearchControl1.Visible = false;
+            jobEntryControl1.Enabled = false;
+            jobEntryControl1.Visible = false;
+            partEntryControl1.Enabled = false;
+            partEntryControl1.Visible = false;
         }
     }
 }

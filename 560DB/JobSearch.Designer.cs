@@ -38,6 +38,9 @@
             this.ux_StartDate = new System.Windows.Forms.DateTimePicker();
             this.ux_EndLabel = new System.Windows.Forms.Label();
             this.ux_endDate = new System.Windows.Forms.DateTimePicker();
+            this.ux_ResultGrid = new System.Windows.Forms.DataGridView();
+            this.ux_ResultLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ux_ResultGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // ux_JobIDSearch
@@ -139,7 +142,7 @@
             this.ux_EndLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ux_EndLabel.Location = new System.Drawing.Point(378, 63);
             this.ux_EndLabel.Name = "ux_EndLabel";
-            this.ux_EndLabel.Size = new System.Drawing.Size(26, 17);
+            this.ux_EndLabel.Size = new System.Drawing.Size(25, 17);
             this.ux_EndLabel.TabIndex = 8;
             this.ux_EndLabel.Text = "To:";
             // 
@@ -150,10 +153,30 @@
             this.ux_endDate.Size = new System.Drawing.Size(200, 20);
             this.ux_endDate.TabIndex = 9;
             // 
+            // ux_ResultGrid
+            // 
+            this.ux_ResultGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ux_ResultGrid.Location = new System.Drawing.Point(13, 111);
+            this.ux_ResultGrid.Name = "ux_ResultGrid";
+            this.ux_ResultGrid.Size = new System.Drawing.Size(726, 398);
+            this.ux_ResultGrid.TabIndex = 10;
+            // 
+            // ux_ResultLabel
+            // 
+            this.ux_ResultLabel.AutoSize = true;
+            this.ux_ResultLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ux_ResultLabel.Location = new System.Drawing.Point(639, 512);
+            this.ux_ResultLabel.Name = "ux_ResultLabel";
+            this.ux_ResultLabel.Size = new System.Drawing.Size(84, 13);
+            this.ux_ResultLabel.TabIndex = 11;
+            this.ux_ResultLabel.Text = "Rows Found: 0";
+            // 
             // JobSearchControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ux_ResultLabel);
+            this.Controls.Add(this.ux_ResultGrid);
             this.Controls.Add(this.ux_endDate);
             this.Controls.Add(this.ux_EndLabel);
             this.Controls.Add(this.ux_StartDate);
@@ -166,6 +189,7 @@
             this.Controls.Add(this.ux_JobIDSearch);
             this.Name = "JobSearchControl";
             this.Size = new System.Drawing.Size(751, 535);
+            ((System.ComponentModel.ISupportInitialize)(this.ux_ResultGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +207,7 @@
         private System.Windows.Forms.DateTimePicker ux_StartDate;
         private System.Windows.Forms.Label ux_EndLabel;
         private System.Windows.Forms.DateTimePicker ux_endDate;
+        private System.Windows.Forms.DataGridView ux_ResultGrid;
+        private System.Windows.Forms.Label ux_ResultLabel;
     }
 }
